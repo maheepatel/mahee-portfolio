@@ -539,7 +539,7 @@ line-height: 2.7em;
 
 footer{
     display: grid;
-    color: #fff;
+/*     color: #000; */
     height: 50px;
 
     justify-content: center;
