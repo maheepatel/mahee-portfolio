@@ -1,33 +1,3 @@
-const express = require('express');
-const bodyParser = require("body-parser");
-const request = require('request');
-
-
-const app=express();
-app.use(bodyParser.urlencoded({extended: true}));
-
-app.get("/",function(req,res){
-    res.send(setTheme(mode));
-
-});
-app.get("/newsletter",function(req,res){
-    res.sendFile(__dirname + "index/html");
-
-});
-
-app.post("/newsletter",function(req,res){
-
-
-
-
-})
-
-
-app.listen(7000,function(){
-    console.log("Server running at port 7000");
-})
-
-
 
 
 let theme = localStorage.getItem('theme');
@@ -71,5 +41,3 @@ function setTheme(mode) {
 
 
 
-//New Mailchimp API key:121c5f00c6cb0944d3715922a1be0069-us10
-// list id--21f7d09d15
